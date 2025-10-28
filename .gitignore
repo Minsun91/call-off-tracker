@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# React
+node_modules
+build
+
+# Firebase
+.firebase
+.firebase-tools.json
+functions/node_modules
+functions/.firebase
