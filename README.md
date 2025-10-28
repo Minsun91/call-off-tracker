@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+🚚 Call Off Tracker
+Warehouse Order Tracking Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🧭 Overview
 
-## Available Scripts
+Call Off Tracker는 실시간으로 출하 요청(Call Off), 재고 상태,
+픽업 진행 상황을 한 화면에서 관리할 수 있는 창고 관리 대시보드입니다.
 
-In the project directory, you can run:
+Firebase + React 기반으로 만들어져,
+데이터 업데이트가 즉시 반영되고, 직관적인 UI로 작업 효율을 높입니다.
 
-### `npm start`
+⚙️ Tech Stack
+영역	기술
+Frontend	React (CRA), TailwindCSS
+Backend	Firebase Firestore, Firebase Hosting
+Auth	Firebase Authentication
+Build/Deploy	GitHub → Firebase Hosting (자동 빌드)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🚀 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📦 Order Management – 주문 등록, 수정, 삭제
 
-### `npm test`
+🧾 Packing List & Invoice Tracking – 각 출하 건별 문서 관리
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🔄 Real-time Sync – Firestore 기반 실시간 반영
 
-### `npm run build`
+🧍 User Auth – 토큰 인증 기반 접근 제어
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📊 Dashboard View – 진행 상태를 한눈에 표시
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🌐 Live Demo
+🔗 https://call-off-tracker-96704.web.app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🧩 Directory Structure
+call-off-tracker/
+├─ src/
+│  ├─ components/     # UI components
+│  ├─ pages/          # Page-level views
+│  ├─ firebaseConfig.js
+│  ├─ App.js
+│  └─ index.js
+├─ public/
+│  ├─ index.html
+│  └─ manifest.json
+├─ firebase.json
+└─ package.json
 
-### `npm run eject`
+💡 Roadmap
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ Admin Role 분리
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ Export as Excel/PDF
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Email 알림 자동화
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ Multi-Warehouse 지원
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🪪 License
+© 2025 Minsun Kim. All rights reserved.
