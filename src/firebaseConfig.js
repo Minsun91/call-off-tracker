@@ -1,6 +1,6 @@
 // src/firebaseConfig.js
 import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider } from 'firebase/auth'; // 🔹 GoogleAuthProvider 추가
 import { getFirestore, setLogLevel } from 'firebase/firestore';
 
 // 환경변수에서 가져오되, 없으면 기본값 사용
@@ -14,15 +14,15 @@ const firebaseConfig = {
 };
 
 // 간단한 역할 설정 (개발/테스트용)
-// 실제 운영에서는 custom claims 또는 users 컬렉션으로 관리하세요.
 export const USER_ROLE = process.env.REACT_APP_USER_ROLE || 'SCM'; // 'SCM' or 'Warehouse'
 
 // Firebase 초기화
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
+const provider = new GoogleAuthProvider(); // 🔹 Google provider 생성
 
 // Firestore 디버그 로그 (선택사항)
 setLogLevel('debug');
 
-export { app, auth, db };
+export { app, auth, db, provider }; // 🔹 provider까지 export
